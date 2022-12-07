@@ -17,10 +17,25 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
+    city = ''
+    #Running this loop to ensure the correct user input gets selected else repeat
+    while city not in CITY_DATA.keys():
+        print("\nWelcome to this program. Please choose your city:")
+        print("\n1. Chicago 2. New York City 3. Washington")
+        print("\nAccepted input:\nFull name of city; not case sensitive (e.g. chicago or CHICAGO).\nFull name in title case (e.g. Chicago).")
+        #Taking user input and converting into lower to standardize them
+        #You will find this happening at every stage of input throughout this
+        city = input().lower()
 
+        if city not in CITY_DATA.keys():
+            print("\nPlease check your input, it doesn\'t appear to be conforming to any of the accepted input formats.")
+            print("\nRestarting...")
+
+    print(f"\nYou have chosen {city.title()} as your city.")
 
     # get user input for month (all, january, february, ... , june)
 
+    print(f"\nYou have chosen {city.title()} as your city.")
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
