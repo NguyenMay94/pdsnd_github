@@ -34,8 +34,21 @@ def get_filters():
     print(f"\nYou have chosen {city.title()} as your city.")
 
     # get user input for month (all, january, february, ... , june)
+    #Creating a dictionary to store all the months including the 'all' option
+    MONTH_DATA = {'january': 1, 'february': 2, 'march': 3, 'april': 4, 'may': 5, 'june': 6, 'all': 7}
+    month = ''
+    while month not in MONTH_DATA.keys():
+        print("\nPlease enter month, between January to June and all:")
+        print("\nEnter All to apply no month filter")
+        print("\nAccepted input:\nFull month name; not case sensitive (e.g. january or January).")
+        #Taking user input and converting into lower to standardize them
+        #You will find this happening at every stage of input throughout this
+        month = input().lower()
 
-    print(f"\nYou have chosen {city.title()} as your city.")
+        if month not in MONTH_DATA.keys():
+            print("\nPlease check your input, it doesn\'t appear to be conforming to any of the accepted input formats.")
+            print("\nRestarting...")
+    print(f"\nYou have chosen {month.title()} as your month.")
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
