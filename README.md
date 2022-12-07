@@ -37,7 +37,12 @@ Finally, the user is prompted with the choice of restarting the program or not.
 * new_york_city.csv - Dataset containing all bikeshare information for the city of New York provided by Udacity.
 
 * washington.csv - Dataset containing all bikeshare information for the city of Washington provided by Udacity.
+# Built with
 
+* [Python 3.6.6](https://www.python.org/) - The language used to develop this.
+* [pandas](https://pandas.pydata.org/) - One of the libraries used for this.
+* [numpy](http://www.numpy.org/) - One of the libraries used for this.
+* [time](https://docs.python.org/2/library/time.html) - One of the libraries used for this.
 # Author
 
  * [NguyenMay94](https://github.com/NguyenMay94)
