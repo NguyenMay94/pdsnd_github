@@ -1,17 +1,43 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
+# Project Overview
 
-### Date created
-Include the date you created this project and README file.
+This project get perform descriptive analysis on the bikeshare data from three major U.S. cities - Chicago, Washington, and New York City - to display information such as most popular days or most common stations.
 
-### Project Title
-Replace the Project Title
+### Running the program
 
-### Description
-Describe what your project is about and what it does
+You can input 'python bikeshare_2.py' on your terminal to run this program.
+### Program Details
 
-### Files used
-Include the files used
+The program takes user input for the city (valid city includes: chicago, new york city, washington), month for which the user wants to view data (e.g. January; also includes an 'all' option to apply no month filter), and day for which the user wants to view data (e.g. Monday; also includes an 'all' option to apply no day filter).
 
-### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+Following the input received, the program prints the following details:
 
+* The most common month
+* The most common day of week
+* The most common start hour
+* The most commonly used start station
+* The ost commonly used end station
+* The most frequent combination of start station and end station trip
+* Total travel time
+* Mean travel time
+* Counts of user types
+* Counts of gender
+* Earliest, most recent, and most common year of birth
+
+Finally, the user is prompted with the choice of restarting the program or not.
+
+# Requirements
+
+* Language: Python 3.6 or above
+* Libraries: pandas, numpy, time
+
+# Project Data
+
+* chicago.csv - Stored in the data folder, the chicago.csv file is the dataset containing all bikeshare information for the city of Chicago provided by Udacity.
+
+* new_york_city.csv - Dataset containing all bikeshare information for the city of New York provided by Udacity.
+
+* washington.csv - Dataset containing all bikeshare information for the city of Washington provided by Udacity.
+
+# Author
+
+ * [NguyenMay94](https://github.com/NguyenMay94)
