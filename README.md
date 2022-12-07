@@ -15,7 +15,7 @@ Following the input received, the program prints the following details:
 * The most common day of week
 * The most common start hour
 * The most commonly used start station
-* The ost commonly used end station
+* The most commonly used end station
 * The most frequent combination of start station and end station trip
 * Total travel time
 * Mean travel time
